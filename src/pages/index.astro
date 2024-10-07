@@ -1,10 +1,81 @@
 ---
 import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
+
+// const resumeFetch = await fetch("");
+// const response = resumeFetch.json();
+const resumeData = {
+	name: "Tran Van Do",
+	position: ".NET Developer",
+	contact: {
+		address: "Go Vap District, Ho Chi Minh City",
+		phone: "+84 774 276 286",	
+		email: "tvddaman@gmail.com",
+		linkedin: "/tvddaman",
+	},
+	education: [
+		{
+			school: "Cao Thang College",
+			major: "IT"
+		}	
+	],
+	certificates: [
+		{
+			name: "AZ 900",
+			link: "https://google.com/"
+		}
+	],
+	skills: [
+		".NET Core",
+		"C#",
+		"EF Core",
+		"Javascript",
+		"HTMl 5",
+		"CSS 3",
+		"Angular",
+		"React",
+		"Rust",
+		"Git",
+		"Azure Cloud",
+		"Docker"
+	],
+	workHistories: [
+		{
+			company: "Sai Gon Technology",
+			link: "",
+			position: "Senior Developer",
+			from: "May - 2021",
+			to: "Now",
+			project: [
+				{
+					name: "Idealpos",
+					description: "Cloud-POS System"	,
+					headCount: 6,
+					position: ".NET developer",
+					mainResponsibility: "Develop new features, maintain old features",
+					technology: ".NET Framework, .NET Core, EF Framework, EF Core, Azure SQL",
+					additionalInfo: {},
+				}
+			]
+		}
+	],
+	projects: [
+		{
+			name: "Shibuicat Universe",
+			link : "",
+			description: "It's a framework for self development"	,
+			headCount: 1,
+			position: "Solo developer",
+			mainResponsibility: "Develop/ maintain all the features",
+			technology: ".NET Core, EF Core, AstroJS, PostgreSQL, Rust, Self Hosting, AWS",
+			additionalInfo: {},
+		}
+	]
+}
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
+	<main class="bg-slate-950">
 		<svg
 			class="astro-a"
 			width="495"
@@ -33,12 +104,22 @@ import Layout from '../layouts/Layout.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<div class="grid grid-cols-1 gap-4 md:grid-cols-4">
-		<div class="flex col-span-1 profile-picture-container"><img class="profile-picture aspect-square rounded-full" src="profile-picture.jpg"/></div>
+		<div class="resume-container">	
+		<div class="grid grid-cols-1 gap-4 md:grid-cols-4 mb-4">
+		<div class="flex col-span-1 profile-picture-container"><img class="profile-picture aspect-square rounded-full border-solid border-4" src="profile-picture.jpg"/></div>
 		<div class="flex flex-col justify-center col-span-1 md:col-span-3">
 			<div class="text-4xl">Tran Van Do</div>
 			<div class="text-2xl"><span class="text-gradient">.NET Developer</span></div>
 		</div>
+		</div>
+		<div class="grid grid-cols-1 gap-4 md:grid-cols-4">
+			<div class="flex col-span-1 ">Personal Info</div>
+			<div class="flex flex-col col-span-1 md:col-span-3">
+				<div>
+					Skills	
+				</div>
+				<div>Projects</div>
+			</div>
 		</div>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -66,6 +147,7 @@ import Layout from '../layouts/Layout.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+			</div>
 	</main>
 </Layout>
 
@@ -73,14 +155,17 @@ import Layout from '../layouts/Layout.astro';
 	.profile-header-name{
 		display:inline;
 	}
+	
 	.profile-picture-container{
 		height:150px;
 		width:auto;
 		overflow:hidden;
 	}
+	
 	.profile-picture{
 		max-height:100%;
-		transform:scale(1.5);
+		border-color: ;
+		/* transform:scale(1.5); */
 		/* object-fit:; */
 		/* object-position: -287px -176px; */
 	}
