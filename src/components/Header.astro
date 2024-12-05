@@ -1,0 +1,24 @@
+---
+interface Props {
+  profilePicture: string,
+  name: string,
+  position: string,
+  yoe: number
+};
+
+const {profilePicture, name, position, yoe} = Astro.props;
+---
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 mb-4 bg-zinc-900">
+        <div class="flex col-span-1 profile-picture-container">
+          <img
+            class="profile-picture aspect-square rounded-full border-solid border-4"
+            src="profile-picture.jpg"
+          />
+        </div>
+        <div class="flex flex-col justify-center col-span-1 md:col-span-3">
+          <div class="text-4xl">Tran Van Do</div>
+          <div class="text-2xl">
+            <span class="text-gradient">.NET Developer</span>
+          </div>
+        </div>
+      </div>

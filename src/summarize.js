@@ -2,7 +2,7 @@ export const Summarize = {
 	name: "Tran Van Do",
 	position: ".NET Developer",
 	contact: {
-		address: "Go Vap District, Ho Chi Minh City",
+		address: "Ho Chi Minh, Viet Nam",
 		phone: "+84 774 276 286",
 		email: "tvddaman@gmail.com",
 		social: {
@@ -24,9 +24,9 @@ export const Summarize = {
 		},
 	],
 	skillSets: [
-		["C#", "Rust", "Javascript", "HTML 5", "CSS 3"],
+		["C#", "Rust", "Javascript + Typescript", "HTML 5", "CSS 3"],
 		["SQL Server", "Postgre SQL", "Entity Framework"],
-		[".NET Framework & .NET Core", "Entity Framework & Entity Framework Core", "Angular", "React JS"],
+		[".NET Framework & .NET Core", "Entity Framework & Entity Framework Core", "SignalR", "Angular", "React JS"],
 		["Linux", "Azure", "Docker"]
 	],
 	workHistories: [
@@ -41,10 +41,10 @@ export const Summarize = {
 					name: "Idealpos",
 					description: "Cloud-POS System",
 					headCount: 6,
-					position: ".NET developer",
-					mainResponsibility: "Develop new features, maintain old features",
+					position: "Full stack developer",
+					mainResponsibility: "Develop new features, maintain old features, integrate with 3rd parties",
 					technology:
-						".NET Framework, .NET Core, EF Framework, EF Core, Azure SQL",
+						".NET Framework, .NET Core, EF Framework, EF Core, Azure SQL, Angular, Html, Css, SignalR & WebSocket, Stripe & Adyen payment",
 					additionalInfo: "",
 				},
 			],
@@ -63,7 +63,7 @@ export const Summarize = {
 					position: ".NET developer",
 					mainResponsibility: "Develop new features, maintain old features",
 					technology:
-						".NET Framework, .NET Core, EF Framework, EF Core, Azure SQL",
+						".NET Framework & .NET Core, EF Framework & EF Core, SQL Server, Jenkins & On premise hosting",
 					additionalInfo: "",
 				},
 			],
@@ -72,17 +72,27 @@ export const Summarize = {
 			company: "New Ocean Infosys",
 			link: "",
 			position: "Junior full stack Developer",
-			from: "May 2020",
+			from: "Jan 2019",
 			to: "May 2021",
 			projects: [
 				{
-					name: "ECommerce Platform",
-					description: "ECommerce platform project for multiple clients based in US",
-					headCount: 20,
-					position: ".NET developer",
-					mainResponsibility: "Develop new features, maintain old features",
+					name: "Cement factory management",
+					description: "Inventory & Warehouse management, factory operation management",
+					headCount: 8,
+					position: "Full stack developer",
+					mainResponsibility: "Develop project from scratch and report to team leader",
 					technology:
-						".NET Framework, .NET Core, EF Framework, EF Core, Azure SQL",
+						".NET Framework, EF Framework, SQL Server, SignalR, Angular, Html, Css",
+					additionalInfo: "",
+				},
+				{
+					name: "Insurance Project",
+					description: "Insurance project of an Australian client",
+					headCount: 4,
+					position: "Backend .NET developer",
+					mainResponsibility: "Maintain old features, fix bugs and write automation test using Selenium",
+					technology:
+						".NET Framework, Web form, Selenium, Hibernate, Oracle",
 					additionalInfo: "",
 				},
 			],

@@ -22,7 +22,7 @@ const renderProj = function(proj: any){
   return `<div>
 <div>${proj.name}</div>
 <div>Position: ${proj.position}</div>
-<div>Headcount: ${proj.headcount}</div>
+<div>Headcount: ${proj.headCount}</div>
 <div>Technologies: ${proj.technology}</div>
 <div>Main Responsibility: ${proj.mainResponsibility}</div>
 <div>Description: ${proj.description}</div>
@@ -45,22 +45,8 @@ ${x.projects.map(y => renderProj(y))}
 <Layout title={summarize.name}>
   <main class="md:basis-1/2 basis-full bg-slate-950">
     <div class="resume-container">
-      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 mb-4">
-        <div class="flex col-span-1 profile-picture-container">
-          <img
-            class="profile-picture aspect-square rounded-full border-solid border-4"
-            src="profile-picture.jpg"
-          />
-        </div>
-        <div class="flex flex-col justify-center col-span-1 md:col-span-3">
-          <div class="text-4xl">Tran Van Do</div>
-          <div class="text-2xl">
-            <span class="text-gradient">.NET Developer</span>
-          </div>
-        </div>
-      </div>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
-        <div class="flex flex-col col-span-1 bg-slate-600">
+        <div class="flex flex-col col-span-1 bg-slate-600 p-2">
           <div class="text-2xl text-center">Personal Info</div>
           <div>
             <p><a href={callNumber}><span class="material-symbols-outlined">
@@ -72,7 +58,8 @@ call
 <a target="_blank" href={linkedIn}><i class="devicon-linkedin-plain"></i></a> <a target="_blank" href={github}><i class="devicon-github-plain"></i></a></p>  
           </div>
         </div>
-        <div class="flex flex-col col-span-1 md:col-span-3">
+        
+        <div class="flex flex-col col-span-1 md:col-span-3 bg-cyan-900 p-2">
           <div>
             <div class="text-2xl">Skills</div>
             <div set:html={skillSets()}></div>
