@@ -1,0 +1,45 @@
+---
+interface Social {
+  linkedIn: string,
+  github: string
+};
+
+interface Props{
+  phone:  string,
+  email: string,
+  address:  string,
+  social: Social
+};
+
+const personalInfo = Astro.props;
+const mailTo = `mailto:${personalInfo.email}`;
+const callNumber = `tel:${personalInfo.phone}`;
+const linkedIn = `https://www.linkedin.com/in/${personalInfo.social.linkedIn}`;
+const github = `https://github.com/${personalInfo.social.github}`;
+---
+<div class="text-2xl font-bold">Personal Info</div>
+  <p>
+    <a href={callNumber} class="flex align-items-center space-x-2">
+      <span class="material-symbols-outlined">
+      call
+      </span>
+      <span>{personalInfo.phone}</span>
+    </a> 
+  </p> 
+  <p>
+    <a href={mailTo} class="flex align-items-center space-x-2">
+      <span class="material-symbols-outlined">
+        mail
+      </span>
+      <span>{personalInfo.email}</span>
+    </a> 
+  </p> 
+  <p class="flex align-items-center space-x-2">
+    <span class="material-symbols-outlined">location_on</span>
+    <span>{personalInfo.address}</span>
+  </p>  
+  <br/>
+  <p class="text-2xl flex align-items-center space-x-2">
+    {personalInfo.social.linkedIn && <a target="_blank" href={linkedIn}><i class="devicon-linkedin-plain"></i></a>}
+    {personalInfo.social.github && <a target="_blank" href={github}><i class="devicon-github-plain"></i></a>} 
+  </p>  

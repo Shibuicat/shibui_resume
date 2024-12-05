@@ -1,26 +1,4 @@
-	.profile-header-name{
-		display:inline;
-	}
-	
-	.profile-picture-container{
-		width:200px;
-		padding: 10px 0;
-		overflow:hidden;
-	}
-	
-	.profile-picture{
-		border-radius: 50%;
-		width:150px;
-		height:150px;
-		display:block;
-		margin: 0 auto;
-	}
-	
-	img.profile-picture{
-		object-fit	:cover; 
-	}
-
-	main {
+main {
 		margin: auto;
 		margin-top: 50px;
 		padding: 1rem;

@@ -1,6 +1,8 @@
 export const Summarize = {
 	name: "Tran Van Do",
+	yoe: 6.5,
 	position: ".NET Developer",
+	profilePicture: "profile-picture.jpg",
 	contact: {
 		address: "Ho Chi Minh, Viet Nam",
 		phone: "+84 774 276 286",
@@ -43,8 +45,8 @@ export const Summarize = {
 					headCount: 6,
 					position: "Full stack developer",
 					mainResponsibility: "Develop new features, maintain old features, integrate with 3rd parties",
-					technology:
-						".NET Framework, .NET Core, EF Framework, EF Core, Azure SQL, Angular, Html, Css, SignalR & WebSocket, Stripe & Adyen payment",
+					technologies:
+						[".NET Framework", ".NET Core", "EF Framework", "EF Core", "Azure SQL", "Angular", "Html", "Css", "SignalR & WebSocket", "Stripe & Adyen payment"],
 					additionalInfo: "",
 				},
 			],
@@ -62,8 +64,8 @@ export const Summarize = {
 					headCount: 20,
 					position: ".NET developer",
 					mainResponsibility: "Develop new features, maintain old features",
-					technology:
-						".NET Framework & .NET Core, EF Framework & EF Core, SQL Server, Jenkins & On premise hosting",
+					technologies:
+						[".NET Framework & .NET Core", "EF Framework & EF Core", "SQL Server", "Jenkins & On premise hosting"],
 					additionalInfo: "",
 				},
 			],
@@ -81,8 +83,8 @@ export const Summarize = {
 					headCount: 8,
 					position: "Full stack developer",
 					mainResponsibility: "Develop project from scratch and report to team leader",
-					technology:
-						".NET Framework, EF Framework, SQL Server, SignalR, Angular, Html, Css",
+					technologies:
+						[".NET Framework", "EF Framework", "SQL Server", "SignalR", "Angular", "Html", "Css"],
 					additionalInfo: "",
 				},
 				{
@@ -91,8 +93,8 @@ export const Summarize = {
 					headCount: 4,
 					position: "Backend .NET developer",
 					mainResponsibility: "Maintain old features, fix bugs and write automation test using Selenium",
-					technology:
-						".NET Framework, Web form, Selenium, Hibernate, Oracle",
+					technologies:
+						[".NET Framework", "Web form", "Selenium", "Hibernate, Oracle"],
 					additionalInfo: "",
 				},
 			],
@@ -106,9 +108,9 @@ export const Summarize = {
 			headCount: 1,
 			position: "Solo developer",
 			mainResponsibility: "Develop/ maintain all the features",
-			technology:
-				".NET Core, EF Core, AstroJS, PostgreSQL, Rust, Self Hosting, AWS",
-			additionalInfo: {},
+			technologies:
+				[".NET Core", "EF Core", "AstroJS", "PostgreSQL", "Rust", "Self Hosting", "AWS"],
+			additionalInfo: "",
 		},
 	],
 };

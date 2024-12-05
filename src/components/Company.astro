@@ -1,0 +1,29 @@
+---
+import Project from './Project.astro';
+
+interface Props{
+  name: string, 
+	link: string,
+	position: string	,
+	from: string,
+	to: string,
+	projects: any[]
+}
+
+const company = Astro.props;
+---
+<div class="company my-1">
+  <div class="company-info">
+    <span class="text-xl font-bold">{company.name}</span>
+  </div>
+  <div class="company-projects">
+    {company.projects.map(x => {
+    return (
+    <Project name={x.name} position={x.position} 
+      headCount={x.headCount} technologies={x.technologies} 
+      description={x.description}
+      additionalInfo={x.additionalInfo}
+      mainResponsibility={x.mainResponsibility}/>)
+    })} 
+  </div>
+</div>
