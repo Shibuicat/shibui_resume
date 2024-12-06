@@ -1,7 +1,7 @@
 export const Summarize = {
 	name: "Tran Van Do",
 	yoe: 6.5,
-	position: ".NET Developer",
+	title: ".NET Developer",
 	profilePicture: "profile-picture.jpg",
 	contact: {
 		address: "Ho Chi Minh, Viet Nam",
@@ -33,7 +33,7 @@ export const Summarize = {
 	],
 	workHistories: [
 		{
-			company: "Sai Gon Technology",
+			name: "Sai Gon Technology",
 			link: "",
 			position: "Senior .NET Developer",
 			from: "May 2021",
@@ -52,7 +52,7 @@ export const Summarize = {
 			],
 		},
 		{
-			company: "Relationshop",
+			name: "Relationshop",
 			link: "",
 			position: "Junior .NET Developer",
 			from: "May 2020",
@@ -71,7 +71,7 @@ export const Summarize = {
 			],
 		},
 		{
-			company: "New Ocean Infosys",
+			name: "New Ocean Infosys",
 			link: "",
 			position: "Junior full stack Developer",
 			from: "Jan 2019",

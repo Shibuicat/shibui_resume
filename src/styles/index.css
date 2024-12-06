@@ -1,24 +1,33 @@
 main {
-		margin: auto;
-		margin-top: 50px;
-		padding: 1rem;
-		color: white;
-	}
-	
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}	
+	margin: auto;
+	margin-top: 50px;
+	padding: 1rem;
+	color: white;
+}
+
+.astro-a {
+	position: absolute;
+	top: -32px;
+	left: 50%;
+	transform: translatex(-50%);
+	width: 220px;
+	height: auto;
+	z-index: -1;
+}
+
+.text-gradient {
+	background-image: var(--accent-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 400%;
+	background-position: 0%;
+}
+
+.translate-z-1:hover {
+	transform: translateX(-1rem) translateY(-1rem);
+	transition: transform .3s ease;
+}
+
+.translate-z-1{	
+	transition: transform .3s ease;
+}

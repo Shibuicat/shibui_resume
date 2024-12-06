@@ -11,8 +11,8 @@ interface Props{
 
 const project = Astro.props;
 ---
-<div class="project">
-  <div>{project.name}</div>
+<div class="project mb-2">
+  <div class="font-bold">{project.name}</div>
   <div>Position: {project.position}</div>
   <div>Headcount: {project.headCount}</div>
   <div>Technologies: {project.technologies.join(', ')}</div>
