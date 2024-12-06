@@ -25,11 +25,12 @@ main {
 
 .translate-z-1:hover {
   transform: translateX(-1rem) translateY(-1rem);
-  transition: transform 1s linear;
+  /* transition: transform 3s linear; */
   background: rgb(19 78 74 / var(--tw-bg-opacity));
-  transition: background 1s linear;
+  transition: background .8s linear;
 }
 
 .translate-z-1 {
-  transition: transform 0.5s linear;
+  /* transition: transform 3s linear; */
+  transition: background .8s linear;
 }
