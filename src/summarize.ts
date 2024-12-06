@@ -98,7 +98,7 @@ export const Summarize = {
 					additionalInfo: "",
 				},
 			],
-		},	
+		},
 		{
 			name: "CMC SISG",
 			link: "",

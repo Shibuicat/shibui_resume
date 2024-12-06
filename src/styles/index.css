@@ -1,35 +1,35 @@
 main {
-	margin: auto;
-	margin-top: 50px;
-	padding: 1rem;
-	color: white;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1rem;
+  color: white;
 }
 
 .astro-a {
-	position: absolute;
-	top: -32px;
-	left: 50%;
-	transform: translatex(-50%);
-	width: 220px;
-	height: auto;
-	z-index: -1;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 220px;
+  height: auto;
+  z-index: -1;
 }
 
 .text-gradient {
-	background-image: var(--accent-gradient);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-size: 400%;
-	background-position: 0%;
+  background-image: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400%;
+  background-position: 0%;
 }
 
 .translate-z-1:hover {
-	transform: translateX(-1rem) translateY(-1rem);
-	transition: transform 1s linear;
-	background: rgb(19 78 74 / var(--tw-bg-opacity));
-	transition: background 1s linear;
+  transform: translateX(-1rem) translateY(-1rem);
+  transition: transform 1s linear;
+  background: rgb(19 78 74 / var(--tw-bg-opacity));
+  transition: background 1s linear;
 }
 
 .translate-z-1 {
-	transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
 }
